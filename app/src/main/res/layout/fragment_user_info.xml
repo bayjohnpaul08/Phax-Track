@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".navigationItem.userInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/update_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/group_1"
+            app:layout_constraintEnd_toEndOf="@+id/getName"
+            app:layout_constraintStart_toStartOf="@+id/getName"
+            app:layout_constraintTop_toBottomOf="@+id/getName" />
+
+        <TextView
+            android:id="@+id/getName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SANDY KWON'S WALL"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/getId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Patient's ID Number"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/update_image"
+            app:layout_constraintStart_toStartOf="@+id/update_image"
+            app:layout_constraintTop_toBottomOf="@+id/update_image" />
+
+        <TextView
+            android:id="@+id/getGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="F - 20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/getId"
+            app:layout_constraintStart_toStartOf="@+id/getId"
+            app:layout_constraintTop_toBottomOf="@+id/getId" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getGender">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_view_patient"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Complete Name"
+                    android:textColor="@color/colorPrimaryLightText"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.065"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/getFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Sandy Park Kwon"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Date of Birth"
+                    android:textColor="@color/colorPrimaryLightText"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/getFullName"
+                    app:layout_constraintTop_toBottomOf="@+id/getFullName" />
+
+                <TextView
+                    android:id="@+id/getBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="July 7, 2000"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Contact No."
+                    android:textColor="@color/colorPrimaryLightText"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/getBirthday"
+                    app:layout_constraintTop_toBottomOf="@+id/getBirthday" />
+
+                <TextView
+                    android:id="@+id/getNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="09777777777"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView6"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimaryLightText"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/getNum"
+                    app:layout_constraintTop_toBottomOf="@+id/getNum" />
+
+                <TextView
+                    android:id="@+id/getAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:lines="2"
+                    android:text="Bansud, Oriental Mindoro"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/immune"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/card_view_patient"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="20dp"
+            android:text="View Immunization History"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+        <TextView
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/card_view_patient"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="20dp"
+            android:text="View Comments"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="@+id/immune"
+            app:layout_constraintStart_toStartOf="@+id/immune"
+            app:layout_constraintTop_toBottomOf="@id/immune" />
+
+        <TextView
+            android:id="@+id/files"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_view_patient"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="20dp"
+            android:text="Files/Documents"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="@+id/comments"
+            app:layout_constraintStart_toStartOf="@+id/comments"
+            app:layout_constraintTop_toBottomOf="@+id/comments" />
+
+        <TextView
+            android:id="@+id/adverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/card_view_patient"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="20dp"
+            android:text="Adverse Experience"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/files"
+            app:layout_constraintStart_toStartOf="@+id/files"
+            app:layout_constraintTop_toBottomOf="@id/files" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <TextView-->
+<!--                android:id="@+id/textview"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:text="PATIENT PROFILE"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.512"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/profilePic"-->
+<!--                android:layout_width="140dp"-->
+<!--                android:layout_height="140dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginBottom="487dp"-->
+<!--                android:src="@drawable/image"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.498"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textview"-->
+<!--                app:layout_constraintVertical_bias="0.0" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="John Paul Ladera Bay"-->
+<!--                android:textSize="18dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.497"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/profilePic" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/idNo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="@string/id"-->
+<!--                android:textColor="@color/colorGreen"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.498"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/name" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/tile_divider"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:background="?android:attr/dividerVertical"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/idNo" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/email"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:drawableLeft="@drawable/ic_email"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:text="bay.johnpaul08@gmail.com"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.006"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tile_divider" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/age"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:layout_marginEnd="272dp"-->
+<!--                android:layout_marginRight="272dp"-->
+<!--                android:drawableLeft="@drawable/ic_age"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:text="21 years old"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/email"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/email"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/email" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/birthday"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:drawableLeft="@drawable/ic_birthday"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:text="December 8, 1998"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/email"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/age"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/age" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/address"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:drawableLeft="@drawable/ic_location"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:text="Amadeo, Cavite"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/birthday"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/birthday" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/tile_divider2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:background="?android:attr/dividerVertical"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/address" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/vaccineHistory"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="258dp"-->
+<!--                android:layout_marginRight="258dp"-->
+<!--                android:drawableLeft="@drawable/ic_baseline_history_24"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:text="VACCINE HISTORY"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tile_divider2" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/listViewPatient"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/vaccineHistory" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+

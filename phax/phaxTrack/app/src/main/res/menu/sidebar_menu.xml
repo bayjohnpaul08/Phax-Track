@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item
+            android:title="Patient Records"
+            android:id="@+id/menuPatient" />
+        <item
+            android:title="Health Institutions"
+            android:id="@+id/menuInstitutions" />
+        <item
+            android:title="About PHax Track"
+            android:id="@+id/menuPhax"/>
+
+        <item android:title="@string/Account">
+                <menu>
+                        <item
+                            android:title="@string/Profile"
+                            android:id="@+id/menuProfile" />
+
+                        <item
+                            android:title="@string/Logout"
+                            android:id="@+id/menuLogout" />
+                </menu>
+        </item>
+</menu>

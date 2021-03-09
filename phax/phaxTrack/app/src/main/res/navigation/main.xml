@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/menuPatient">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        />
+<!--    <fragment-->
+<!--        android:id="@+id/menuAddPatient"-->
+<!--        android:name="com.example.phaxtrack.navigationItem.addPatientFragment"-->
+<!--        android:label="fragment_add_patient"-->
+<!--        tools:layout="@layout/fragment_add_patient" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/menuProfile"-->
+<!--        android:name="com.example.phaxtrack.navigationItem.docProfileFragment"-->
+<!--        android:label="Profile"-->
+<!--        tools:layout="@layout/fragment_doc_profile" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/menuPatient"-->
+<!--        android:name="com.example.phaxtrack.navigationItem.homeFragment"-->
+<!--        android:label="Patient"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/menuVaccine"-->
+<!--        android:name="com.example.phaxtrack.navigationItem.institutionListFragment"-->
+<!--        android:label="Vaccine"-->
+<!--        tools:layout="@layout/fragment_institution_list" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/logoutFragment"-->
+<!--        android:name="com.example.phaxtrack.navigationItem.logoutFragment"-->
+<!--        android:label="fragment_logout"-->
+<!--        tools:layout="@layout/fragment_logout" />-->
+
+
+</LinearLayout>

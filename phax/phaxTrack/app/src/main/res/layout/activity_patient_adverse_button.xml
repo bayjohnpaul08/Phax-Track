@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient_adverse_button">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/group_1"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toTopOf="@id/card"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@id/card" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/ellipse_4"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toTopOf="@id/card"
+            app:layout_constraintEnd_toEndOf="@+id/card"
+            app:layout_constraintTop_toTopOf="@id/card" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@color/colorPrimaryLight"
+            android:paddingTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/getName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:text="Hello, *Patient Name*!"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/adverse"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/button_light"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingLeft="24dp"
+        android:paddingTop="5dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="5dp"
+        android:text="What is/are the adverse event/s you experience?"
+        android:textColor="@color/navy_blue"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/ans1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your answer here"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/navy_blue"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:textSize="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_light"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingLeft="24dp"
+        android:paddingTop="5dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="5dp"
+        android:text="When did you experience the said adverse event/s? (e.g. start: November 11, 2020)"
+        android:textColor="@color/navy_blue"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/ans1"
+        app:layout_constraintStart_toStartOf="@+id/ans1"
+        app:layout_constraintTop_toBottomOf="@+id/ans1" />
+
+    <EditText
+        android:id="@+id/ans2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your answer here"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/navy_blue"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:textSize="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+    android:id="@+id/textView16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/button_light"
+    android:fontFamily="@font/poppins_regular"
+    android:paddingLeft="24dp"
+    android:paddingTop="5dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="5dp"
+    android:text="How long have you been experiencing the said adverse event/s? (e.g. 3 days or continuing as of today)"
+    android:textColor="@color/navy_blue"
+    android:textSize="13dp"
+    app:layout_constraintEnd_toEndOf="@+id/ans2"
+    app:layout_constraintStart_toStartOf="@+id/ans2"
+    app:layout_constraintTop_toBottomOf="@+id/ans2" />
+
+    <EditText
+        android:id="@+id/ans3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your answer here"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/navy_blue"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:textSize="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/save_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home_outline"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="24dp"
+        android:paddingTop="5dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="5dp"
+        android:text="@string/save_button"
+        android:textColor="@color/navy_blue"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/ans3"
+        app:layout_constraintStart_toStartOf="@+id/ans3"
+        app:layout_constraintTop_toBottomOf="@+id/ans3" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingLeft="24dp"
+        android:paddingTop="5dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="5dp"
+        android:text="@string/homeBtn"
+        android:textColor="@color/navy_blue"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/save_edit"
+        app:layout_constraintStart_toStartOf="@+id/save_edit"
+        app:layout_constraintTop_toBottomOf="@+id/save_edit" />
+
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_horizontal"
+            android:text="©2020-2021 PhaxTrack. This application is intended for residents of Makati City, Philippines"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@+id/card"
+            app:layout_constraintEnd_toStartOf="@+id/image1"
+            app:layout_constraintStart_toEndOf="@+id/image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

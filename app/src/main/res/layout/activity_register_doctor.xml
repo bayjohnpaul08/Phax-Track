@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.registerDoctor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_horizontal"
+            android:text="SIGN UP"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_horizontal"
+            android:text="LOG IN"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textview" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/patientImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/camera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Upload Picture"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/patientImage"
+            app:layout_constraintStart_toStartOf="@+id/patientImage"
+            app:layout_constraintTop_toBottomOf="@+id/patientImage" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="@string/Email"
+            android:textColorHint="@color/colorPrimary"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/loginText"
+            app:layout_constraintStart_toStartOf="@+id/textview"
+            app:layout_constraintTop_toBottomOf="@+id/patientImage">
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:ems="10"
+                android:fontFamily="@font/poppins_bold"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="Username"
+            android:textColorHint="@color/colorPrimary"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/text1"
+            app:layout_constraintStart_toStartOf="@+id/text1"
+            app:layout_constraintTop_toBottomOf="@+id/text1">
+
+            <EditText
+                android:id="@+id/inputUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:ems="10"
+                android:fontFamily="@font/poppins_bold"
+                android:inputType="textPersonName"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/text2"
+            app:layout_constraintStart_toStartOf="@+id/text2"
+            app:layout_constraintTop_toBottomOf="@+id/text2">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Work Area"
+                android:textColorHint="@color/colorPrimary"
+                app:errorEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/inputWorkArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_bold"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="Name of Health Institution"
+            android:textColorHint="@color/colorPrimary"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/text3"
+            app:layout_constraintStart_toStartOf="@+id/text3"
+            app:layout_constraintTop_toBottomOf="@+id/text3">
+
+            <AutoCompleteTextView
+                android:id="@+id/inputHealthInstitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:ems="10"
+                android:fontFamily="@font/poppins_bold"
+                android:inputType="textCapWords"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="Location"
+            android:textColorHint="@color/colorPrimary"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/text4"
+            app:layout_constraintStart_toStartOf="@+id/text4"
+            app:layout_constraintTop_toBottomOf="@+id/text4">
+
+            <EditText
+                android:id="@+id/inputLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:ems="10"
+                android:lines="2"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="@string/Password"
+            android:textColorHint="@color/colorPrimary"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/text5"
+            app:layout_constraintStart_toStartOf="@+id/text5"
+            app:layout_constraintTop_toBottomOf="@+id/text5"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:ems="10"
+                android:fontFamily="@font/poppins_bold"
+                android:inputType="textPassword"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_radius"
+            android:text="CREATE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text6"
+            app:layout_constraintStart_toStartOf="@+id/text6"
+            app:layout_constraintTop_toBottomOf="@+id/text6" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:theme="@style/AppTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/searchButton"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="@+id/searchButton" />
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/textInputLayout3"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--            android:layout_width="183dp"-->
+        <!--            android:layout_height="52dp"-->
+        <!--            android:layout_marginStart="19dp"-->
+        <!--            android:layout_marginLeft="19dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:hint="@string/fName"-->
+        <!--            app:errorEnabled="true"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/textInputLayout11"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/docProfilePic">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:id="@+id/addFname"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:ems="10"-->
+        <!--                android:inputType="textCapWords" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@+id/textInputLayout11"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="183dp"-->
+        <!--        android:layout_height="52dp"-->
+        <!--        android:layout_marginStart="8dp"-->
+        <!--        android:layout_marginLeft="8dp"-->
+        <!--        android:hint="@string/lName"-->
+        <!--        app:errorEnabled="true"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/textInputLayout3"-->
+        <!--        app:layout_constraintTop_toTopOf="@+id/textInputLayout3">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/addLname"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textCapWords" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@id/textInputLayout1"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="374dp"-->
+        <!--        android:layout_height="52dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:hint="@string/specialties"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/textInputLayout11"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/specialties"-->
+        <!--            android:layout_width="374dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textCapWords" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@id/textInputLayout"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="374dp"-->
+        <!--        android:layout_height="52dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:hint="@string/Email"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/textInputLayout1"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/addEmail"-->
+        <!--            android:layout_width="374dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPersonName" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <ProgressBar-->
+        <!--        android:id="@+id/progressBar3"-->
+        <!--        style="?android:attr/progressBarStyle"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="12dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/textInputLayout15"-->
+        <!--        app:layout_constraintHorizontal_bias="0.496"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/textInputLayout15"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout15" />-->
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@+id/textInputLayout13"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="183dp"-->
+        <!--        android:layout_height="52dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        app:passwordToggleEnabled="true"-->
+        <!--        android:hint="@string/Password"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"-->
+        <!--        app:layout_constraintHorizontal_bias="0.0"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/textInputLayout"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/addPass"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPassword" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@+id/textInputLayout14"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="183dp"-->
+        <!--        android:layout_height="52dp"-->
+        <!--        android:layout_marginStart="8dp"-->
+        <!--        android:layout_marginLeft="8dp"-->
+        <!--        app:passwordToggleEnabled="true"-->
+        <!--        android:hint="@string/confirmPass"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/textInputLayout13"-->
+        <!--        app:layout_constraintTop_toTopOf="@+id/textInputLayout13">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/addConfirmPass"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPassword" />-->
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <!--        android:id="@+id/textInputLayout15"-->
+        <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--        android:layout_width="374dp"-->
+        <!--        android:layout_height="52dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:hint="@string/address"-->
+        <!--        app:layout_constraintEnd_toEndOf="@+id/textInputLayout14"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/textInputLayout13"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">-->
+
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--            android:id="@+id/addAddress"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textCapWords"/>-->
+        <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/regButton"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="12dp"-->
+        <!--            android:background="@color/blue"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:text="Register"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/textInputLayout15"-->
+        <!--            app:layout_constraintHorizontal_bias="0.496"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/textInputLayout15"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/progressBar3" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

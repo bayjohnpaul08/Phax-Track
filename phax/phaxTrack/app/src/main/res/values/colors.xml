@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262553</color>
+    <color name="colorPrimaryLight">#545474</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorPrimaryLightText">#C4C4C4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="light">#FFFDFD</color>
+<!--    <color name="colorPrimaryDark">#512DA8</color>-->
+    <color name="colorAccent">#FF5252</color>
+    <color name="navy_blue">#52516A</color>
+    <color name="button_light">#bebecb</color>
+
+
+    <color name="colorGreen">#32CD32</color>
+<!--    <color name="blue">#147994</color>-->
+<!--    <color name="light_gray">#dcdcdc</color>-->
+<!--    <color name="dark_blue">#262553</color>-->
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "732897785966",
+    "firebase_url": "https://phax-f6447.firebaseio.com",
+    "project_id": "phax-f6447",
+    "storage_bucket": "phax-f6447.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732897785966:android:943683bc041d7a09828e7f",
+        "android_client_info": {
+          "package_name": "com.example.phaxtrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732897785966-au58flp0fqt0mlc51m1vtgs8q5itlgi0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phaxtrack",
+            "certificate_hash": "4c92c6d051f4c11648a6ce578f65585719451225"
+          }
+        },
+        {
+          "client_id": "732897785966-8tvkp4nddopau3j5omc1lf3qp185oifu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBevA8T8AGzgTGaW-ywKLEPn1BhrVIot6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732897785966-8tvkp4nddopau3j5omc1lf3qp185oifu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

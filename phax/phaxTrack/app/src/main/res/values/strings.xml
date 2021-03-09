@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">PHax Track</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+    <string name="institutions">Health Institutions</string>
+    <string name="home">Home</string>
+    <string name="record">Patient Records</string>
+    <string name="Profile">Profile</string>
+    <string name="Logout">Logout</string>
+    <string name="others">others</string>
+    <string name="Account">Account</string>
+    <string name="vaccineId">ID Vaccine</string>
+    <string name="vaccineName">Name Vaccine</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="Phone">Phone</string>
+    <string name="confirmPass">Confirm Password</string>
+    <string name="Password">Password</string>
+    <string name="fName">First Name</string>
+    <string name="mName">Middle Name</string>
+    <string name="lName">Last Name</string>
+    <string name="Email">Email Address</string>
+    <string name="age">Age</string>
+    <string name="birthday">Birthday</string>
+    <string name="address">Address</string>
+    <string name="specialties">Specialties</string>
+    <string name="id">Patient ID</string>
+    <string name="title_activity_sample">sample</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="adverse">An <b>"adverse event" </b> is an untoward event
+        <i>(difficult to guide, manage, or work with)</i> that occurs after a vaccination that might be
+        caused by the vaccine product or vaccination process.</string>
+
+    <string name="save_button"><b>SAVE</b> and <b>SEND</b></string>
+
+
+    <string name="homeBtn"><u><i>HOME </i></u></string>
+    <string name="backBtn"><u><i>BACK </i></u></string>
+    <string name="edit"><u><i>Edit </i></u></string>
+    <string name="save"><u><i>Save </i></u></string>
+    <string name="log"><u><i>LOGOUT </i></u></string>
+    <string name="phax">"PHax Track is an android mobile application with a database for Makati city health institutions which aim to document and track immunization records of the patient. It also allows the patient to report adverse events after immunization." </string>
+
+</resources>
